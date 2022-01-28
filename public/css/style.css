@@ -2714,7 +2714,7 @@ Header Styles
 .mainmenu__nav .meninmenu li a {
     align-items: center;
     align-self: stretch;
-    color: #333;
+    color: #fff;
     display: flex;
     font-size: 14px;
     font-weight: 600;
@@ -3013,7 +3013,7 @@ Header Styles
 
 /* Header Style 14*/
 .mainmenu__nav {
-    justify-content: left;
+    
 }
 
 /* Header Style 15*/

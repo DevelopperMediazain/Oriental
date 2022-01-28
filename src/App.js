@@ -6,6 +6,7 @@ import Index  from './components/content/Index';
 import Boutique  from './components/content/Boutique';
 import {Routes,Route } from "react-router-dom";
 
+
 function App() {
   return (
 

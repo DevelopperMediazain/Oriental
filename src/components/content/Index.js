@@ -1,10 +1,17 @@
 import React from "react";
+import SliderHome  from '../header/SliderHome';
 
 const Index = () => {
+
+
+
+
+
   return(
 
      <div className="Index">
-     
+
+      <SliderHome/>
   
     <div className="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
       

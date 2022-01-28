@@ -24,6 +24,17 @@
   color: white;
 }
 
+.sliderHome {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.sliderHome .slick-slide img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
 .App-link {
   color: #61dafb;
 }
