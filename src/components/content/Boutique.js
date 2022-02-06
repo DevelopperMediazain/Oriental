@@ -1,5 +1,5 @@
 import React ,{useEffect,useState} from "react";
-
+import { Link} from "react-router-dom";
 
 const Boutique = () => {
 
@@ -53,18 +53,18 @@ const Boutique = () => {
                
 
                   <div className="product product__style--3 col-md-3">
-
+                   
                   <div className="product__thumb">
-                      <a className="first__img" href="single-product.html">
-                         <img src= { 'https://server18.servermdz.pro/ao-boutique/public/' + eleProduits.images} alt="product image"/></a>
-                      <a className="second__img animation1" href="single-product.html">
-                         <img src= { 'https://server18.servermdz.pro/ao-boutique/public/' + eleProduits.imagebacks} alt="product image"/></a>
+                 <Link className="first__img" to={ "/singleProduct/" + eleProduits.id} >
+                         <img src= { 'https://server18.servermdz.pro/ao-boutique/public/' + eleProduits.images} alt="product image"/></Link>
+                      <Link className="second__img animation1" to={ "/singleProduct/" + eleProduits.id} >
+                         <img src= { 'https://server18.servermdz.pro/ao-boutique/public/' + eleProduits.imagebacks} alt="product image"/></Link>
                       {/* <div className="hot__box">
                           <span className="hot-label">{eleProduits.titre}</span>
                       </div> */}
                   </div>
                   <div className="product__content content--center content--center">
-                      <h4><a href="single-product.html">{eleProduits.titre}</a></h4>
+                      <h4><Link to={ "/singleProduct/" + eleProduits.id} >{eleProduits.titre}</Link></h4>
                       <ul className="price d-flex">
                           <li>{eleProduits.prix} MAD</li>
                           <li className="old_price">{eleProduits.solde} MAD</li>
